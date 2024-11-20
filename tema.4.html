@@ -28,9 +28,9 @@
         case "resta":
             return restar(num1, num2);
         case "multiplicacion":
-            return multiplicar(num1, num2);
+            return multi(num1, num2);
         case "division":
-            return dividir(num1, num2);
+            return divi(num1, num2);
         default:
             return "Operación no válida";
     }
@@ -40,7 +40,7 @@
                 let numero2=parseFloat(prompt("ingresa el segundo numero:"));
                 let operacion=prompt("ingrese la operacion(sumar,restar,multi,divi)");
 
-                let resultado=calculadora(numero1,numero2,operacion);
+                let resultado=calculadora(num1,num2,operacion);
 
                 console.log("el resultado es: "+resultado);
                 document.write("el resultado es:  "+resultado)
