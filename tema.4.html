@@ -21,20 +21,21 @@
                     return a/b;
                 }
                 //funcion calculadora
-                function calculadora (n1,n2,operacion){
-                    switch(operacion){
-                        case 'sumar':
-                            return(n1,n2);
-                         case 'restar':
-                            return (n1,n2);
-                         case 'multi':
-                             return(n1,n2);
-                          case 'divi':
-                              return (n1,n2);
-                          default:
-                             return "operaciones no valida...";
-                    }
-                }
+                function calculadora(num1, num2, operacion) {
+    switch(operacion) {
+        case "suma":
+            return sumar(num1, num2);
+        case "resta":
+            return restar(num1, num2);
+        case "multiplicacion":
+            return multiplicar(num1, num2);
+        case "division":
+            return dividir(num1, num2);
+        default:
+            return "Operación no válida";
+    }
+}
+                
                 let numero1=parseFloat(prompt("ingresa el primer numero:"));
                 let numero2=parseFloat(prompt("ingresa el segundo numero:"));
                 let operacion=prompt("ingrese la operacion(sumar,restar,multi,divi)");
